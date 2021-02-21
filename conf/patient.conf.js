@@ -23,7 +23,7 @@ nightwatch_config = {
         'build' : 'Patient Tests',
         'project' : 'eVisit Nightwatch',
         'browser': 'Chrome',
-        'browser_version': '78.0 beta',
+        'browser_version': '87.0',
         'resolution': '1920x1080',
         'goog:chromeOptions': {
           'args': ["--use-fake-device-for-media-stream", "--use-fake-ui-for-media-stream"],
@@ -35,7 +35,7 @@ nightwatch_config = {
         }
     },
     globals: {
-        env: "release",
+        env: "app",
         handle: "omega",
         email:"taylor+o14@evisit.com",
         password:"Patient123!",
