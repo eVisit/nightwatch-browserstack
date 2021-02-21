@@ -155,7 +155,7 @@ const commands = [{
         this.expect.element(`@Modal`).text.to.contain("Our friendly staff is standing by and happy to assist you with whatever you may need.")
         this.expect.element(`@Modal`).text.to.contain("Submit Ticket")
         this.expect.element(`@Modal`).text.to.contain("(928) 297-2294")
-        this.expect.element(`@Modal`).text.to.contain("View Knowledgebase")
+        this.expect.element(`@Modal`).text.to.contain("View Knowledge base")
 
         // Check all links remain as expected
         this.waitForElementVisible('@submitTicketLink')
