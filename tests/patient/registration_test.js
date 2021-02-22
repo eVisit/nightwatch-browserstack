@@ -30,7 +30,8 @@ module.exports = {
         "Address 1 Edited", "Address 2 Edited", "City Edited", "WyomingOption", "12345", 
         "480-289-1576", "09/06/1990", "femaleOption", "")
         // Skip the profile picture step
-        profilePicturePage.skipProfilePicture()
+        //commented out as we no longer present the profile picture option in the registration flow
+        //profilePicturePage.skipProfilePicture()
         // Add new valid information as insurance
         insurancePage.addNewInsurance()
         // Reach welcome page and check text on this page
