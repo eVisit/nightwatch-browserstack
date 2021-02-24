@@ -74,7 +74,6 @@ const commands = [{
             // The expected toast message
             .checkToastMessage("Value required for Insurance Company.")
             .click('@btnCloseToast')
-            .waitForElementNotPresent('@toast')
 
             .click('@btnBack') // Back
             .waitForElementVisible('@btnAddInsuranceYes', 5000)
@@ -97,7 +96,7 @@ const commands = [{
             .click('@btnUpdate')
 
             // The expected toast message
-            .checkToastMessage("You must accept the insurance agreement.")
+            .checkToastMessage("There is more than one field that is required.")
             .click('@btnCloseToast')
             .waitForElementNotPresent('@toast')
 

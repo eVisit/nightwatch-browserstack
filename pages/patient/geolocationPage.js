@@ -30,7 +30,7 @@ const commands = [{
         this
             .waitForElementVisible(`@confirmCheckBox`, 15000)
             // Check empty name yet to be changed
-            .expect.element(`@btnUserProfile`).text.to.contain("No Name")
+            .expect.element(`@btnUserProfile`).text.to.contain("No name")
 
             // Check failure message when try to continue without the needed information
         this.click('@btnContinue')
@@ -43,7 +43,6 @@ const commands = [{
             .click('@btnContinue')
             .checkToastMessage("Licensed State required.")
             .click('@btnCloseToast')
-            .waitForElementNotPresent('@toast')
             .click('@confirmCheckBox')
 
             // Check failure message if checkbox is not selected
@@ -53,7 +52,6 @@ const commands = [{
             .click('@btnContinue')
             .checkToastMessage("Please confirm that you are in one of the listed locations.")
             .click('@btnCloseToast')
-            .waitForElementNotPresent('@toast')
 
         return this
     },
