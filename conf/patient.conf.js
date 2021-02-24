@@ -23,7 +23,7 @@ nightwatch_config = {
         'build' : 'Patient Tests',
         'project' : 'eVisit Nightwatch',
         'browser': 'Chrome',
-        'browser_version': '87.0',
+        'browser_version': '88.0',
         'resolution': '1920x1080',
         'goog:chromeOptions': {
           'args': ["--use-fake-device-for-media-stream", "--use-fake-ui-for-media-stream"],

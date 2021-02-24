@@ -15,7 +15,7 @@ module.exports = {
         const loginPage = browser.page.loginPage()
         const geolocationPage = browser.page.patient.geolocationPage()
         const personalInfoPage = browser.page.patient.first_time_login.personalInfoPage()
-        const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
+        //const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
         const insurancePage = browser.page.patient.first_time_login.insurancePage()
         const welcomePage = browser.page.patient.first_time_login.welcomePage()
 
@@ -44,15 +44,15 @@ module.exports = {
         // Open website using environment and practice defined as global variables
         loginPage.goToPracticeLoginPage()
         // Fail to register because of missing info
-        loginPage.registrationFailureAllMissing()
+        //loginPage.registrationFailureAllMissing()
         // Fail to register because the email is already used
         loginPage.registrationFailureEmailAlreadyUsed(browser.globals.email, browser.globals.password)
         // Fail to register because the password confirmation is wrong
-        loginPage.registrationFailureDifferentPasswords(browser.globals.password)
+        //loginPage.registrationFailureDifferentPasswords(browser.globals.password)
         // Fail to register because the password is invalid
-        loginPage.registrationFailureInvalidPassword()
+        //loginPage.registrationFailureInvalidPassword()
         // Fail to register because the agreement checkbox is not selected
-        loginPage.registrationFailureAgreementNotAccepted(browser.globals.password)
+        //loginPage.registrationFailureAgreementNotAccepted(browser.globals.password)
     },
 
     "Registration - Geolocation failure messages": function (browser) {
@@ -82,35 +82,37 @@ module.exports = {
         personalInfoPage.personalInfoFailureMessages()
     },
 
-    "Registration - Skip profile picture successfully": function (browser) {
-        const loginPage = browser.page.loginPage()
-        const geolocationPage = browser.page.patient.geolocationPage()
-        const personalInfoPage = browser.page.patient.first_time_login.personalInfoPage()
-        const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
-        const insurancePage = browser.page.patient.first_time_login.insurancePage()
+    // we no longer present profile picture in the registration flow. leaving here for reference. 
 
-        // Open website using environment and practice defined as global variables
-        loginPage.goToPracticeLoginPage()
-        // Register a new email successfully and login
-        loginPage.registrationSuccess(browser.globals.password)
-        // Select a state and continue from geolocation page
-        geolocationPage.confirmGeolocation()
-        // Add all valid information as personal info and continue
-        personalInfoPage.confirmPersonalInfo("First Name Edited", "Middle Name Edited","Last Name Edited", 
-        "Address 1 Edited", "Address 2 Edited", "City Edited", "WyomingOption", "12345", 
-        "480-289-1576", "09/06/1990", "femaleOption", "")
-        // Skip the profile picture step
-        profilePicturePage.skipProfilePicture()
-        // Verify if insurance page was reached
-        insurancePage.isOnPage()
+    // "Registration - Skip profile picture successfully": function (browser) {
+    //     const loginPage = browser.page.loginPage()
+    //     const geolocationPage = browser.page.patient.geolocationPage()
+    //     const personalInfoPage = browser.page.patient.first_time_login.personalInfoPage()
+    //     const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
+    //     const insurancePage = browser.page.patient.first_time_login.insurancePage()
 
-    },
+    //     // Open website using environment and practice defined as global variables
+    //     loginPage.goToPracticeLoginPage()
+    //     // Register a new email successfully and login
+    //     loginPage.registrationSuccess(browser.globals.password)
+    //     // Select a state and continue from geolocation page
+    //     geolocationPage.confirmGeolocation()
+    //     // Add all valid information as personal info and continue
+    //     personalInfoPage.confirmPersonalInfo("First Name Edited", "Middle Name Edited","Last Name Edited", 
+    //     "Address 1 Edited", "Address 2 Edited", "City Edited", "WyomingOption", "12345", 
+    //     "480-289-1576", "09/06/1990", "femaleOption", "")
+    //     // Skip the profile picture step
+    //     profilePicturePage.skipProfilePicture()
+    //     // Verify if insurance page was reached
+    //     insurancePage.isOnPage()
+
+    // },
 
     "Registration - Insurance failure messages": function (browser) {
         const loginPage = browser.page.loginPage()
         const geolocationPage = browser.page.patient.geolocationPage()
         const personalInfoPage = browser.page.patient.first_time_login.personalInfoPage()
-        const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
+        //const profilePicturePage = browser.page.patient.first_time_login.profilePicturePage()
         const insurancePage = browser.page.patient.first_time_login.insurancePage()
 
         // Open website using environment and practice defined as global variables
@@ -123,8 +125,9 @@ module.exports = {
         personalInfoPage.confirmPersonalInfo("First Name Edited", "Middle Name Edited","Last Name Edited", 
         "Address 1 Edited", "Address 2 Edited", "City Edited", "WyomingOption", "12345", 
         "480-289-1576", "09/06/1990", "femaleOption", "")
+        //no longer have profile picture in this flow. leaving for reference. 
         // Skip the profile picture step
-        profilePicturePage.skipProfilePicture()
+        //profilePicturePage.skipProfilePicture()
         // Check different failure scenarios of filling in insurance information
         insurancePage.checkEmptyCompanyNameFailureMessage()
         insurancePage.checkAgreementRequiredFailureMessage()

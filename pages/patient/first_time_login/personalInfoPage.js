@@ -104,7 +104,7 @@ const commands = [{
             .checkPersonalInfoFailureMessage("First Name Edited", "Middle Name Edited", "Last Name Edited",
                 "Address 1 Edited", "Address 2 Edited", "City Edited", "", "12345",
                 "480-289-1576", "09/06/1990", "femaleOption", "AmericaNoronha020200Option",
-                "State required.")
+                "State can't be blank.")
 
             // First name empty
             .checkPersonalInfoFailureMessage("", "Middle Name Edited", "Last Name Edited",
@@ -116,13 +116,13 @@ const commands = [{
             .checkPersonalInfoFailureMessage("First Name Edited", "Middle Name Edited", "Last Name Edited",
                 "", "Address 2 Edited", "City Edited", "WyomingOption", "12345",
                 "480-289-1576", "09/06/1990", "femaleOption", "AmericaNoronha020200Option",
-                "Address required.")
+                "Address can't be blank.")
 
             // Zip code empty
             .checkPersonalInfoFailureMessage("First Name Edited", "Middle Name Edited", "Last Name Edited",
                 "Address 1 Edited", "Address 2 Edited", "City Edited", "WyomingOption", "",
                 "480-289-1576", "09/06/1990", "femaleOption", "AmericaNoronha020200Option",
-                "ZIP Code required.")
+                "Zip code can't be blank.")
 
             // Zip code with wrong number of digits (3 instead of 5 or 8)
             .checkPersonalInfoFailureMessage("First Name Edited", "Middle Name Edited", "Last Name Edited",
