@@ -2,7 +2,7 @@ const { version } = require("chromedriver");
 
 // src folders can change depending on the tests you'd like to run. target the correct one or you'll have a bad time.
 nightwatch_config = {
-  src_folders : [ "tests/patient" ],
+  src_folders : [ "tests/patient", "tests/provider" ],
 
   custom_commands_path: ["./commands"],
   page_objects_path: ["pages"],
