@@ -20,6 +20,7 @@
     "chromedriver": "^89.0.0",
     "nightwatch-browserstack": "^1.3.0",
     "node-random-name": "^1.0.1",
+    "request": "^2.88.2",
     "selenium-webdriver": "^4.0.0-alpha.7"
   },
   "license": "MIT",
