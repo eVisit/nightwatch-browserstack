@@ -1,9 +1,4 @@
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Help links - Verify all help information": function (browser) {
         const landingPage = browser.page.patient.landingPage()
 

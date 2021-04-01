@@ -9,11 +9,6 @@
 */
 
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Check Patient's tab Information - Page Filters": function (browser) {
         const PatientsPage = browser.page.provider.PatientsPage()
 

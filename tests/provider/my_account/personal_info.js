@@ -1,8 +1,4 @@
 module.exports = {
-    before: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
     //This test edits all fiedls of Personal Info considering the happy path
     "Edit Personal Info Successfully": function (browser) {
         const personalInfoPage = browser.page.provider.my_account.personalInfoPage()

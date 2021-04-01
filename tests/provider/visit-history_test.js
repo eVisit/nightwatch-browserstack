@@ -9,10 +9,6 @@
 */
 
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
 
     "Check Visit History tab Information - Page Filters": function (browser) {
         const visitHistoryPage = browser.page.provider.visitHistoryPage()

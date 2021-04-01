@@ -1,9 +1,4 @@
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Login - Patient login Successfully": function (browser) {
         const landingPage = browser.page.patient.landingPage()
 

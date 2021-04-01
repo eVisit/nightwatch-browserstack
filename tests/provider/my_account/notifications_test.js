@@ -10,8 +10,6 @@ module.exports = {
     
     //To run only one test, change this before function to 'beforeEach'
     before: function (browser) {
-        browser.resizeWindow(1920, 1300);
-        '@tags:'['test']
         notificationsPage = browser.page.provider.my_account.notificationsPage()
         notificationsPage.accessNotificationsPage(browser.globals.providerEmail, browser.globals.providerPassword)
     },
