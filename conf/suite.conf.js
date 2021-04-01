@@ -30,7 +30,7 @@ nightwatch_config = {
     'browserstack.timezone' : "Phoenix",
     'browserstack.geoLocation' : "BR",
     'os_version': 'Big Sur',
-    'browser': 'Chrome,',
+    'browser': 'Chrome',
     'browser_version': '89.0',
     'resolution': '1920x1080',
     'os': 'OS X',
