@@ -6,11 +6,6 @@
 */
 
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Registration - Successful new registration": function (browser) {
         const loginPage = browser.page.loginPage()
         const geolocationPage = browser.page.patient.geolocationPage()

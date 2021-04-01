@@ -3,8 +3,6 @@ let pharmacyPage;
 module.exports = {
     
     before: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
         pharmacyPage = browser.page.patient.my_account.pharmacyPage();
     },
     

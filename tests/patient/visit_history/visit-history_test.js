@@ -9,10 +9,6 @@
 */
 
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
 
     "Check Patient's Visit History information - Visit Details": function (browser) {
         const visitHistoryPage = browser.page.patient.visit_history.visitHistoryPage()

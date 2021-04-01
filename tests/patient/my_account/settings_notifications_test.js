@@ -8,8 +8,6 @@
 module.exports = {
     
     before: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
         settingsPage = browser.page.patient.my_account.settingsPage();
     },
     

@@ -1,9 +1,4 @@
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Edit Biography using Bio Generator Successfully": function (browser) {
         const biographyPage = browser.page.provider.my_account.biographyPage()
 

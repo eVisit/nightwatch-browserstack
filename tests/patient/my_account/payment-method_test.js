@@ -1,9 +1,4 @@
 module.exports = {
-    beforeEach: function (browser) {
-        browser.resizeWindow(1920, 1080);
-        '@tags:'['test']
-    },
-
     "Edit Billing information Successfully": function (browser) {
         const paymentMethodPage = browser.page.patient.my_account.paymentMethodPage()
 
