@@ -24,6 +24,7 @@ nightwatch_config = {
     'build': 'nightwatch-browserstack',
     'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'nick34',
     'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'SBukT13jtljJiBWoBpHw',
+    "browserstack.autoWait": 20,
     'build' : 'eVisit Test Suite',
     'project' : 'Nightwatch',
     'browserstack.debug': true,
@@ -40,17 +41,16 @@ nightwatch_config = {
 
   test_settings: {
     default: {
-      // skip_testcases_on_fail: false, //Do not skip remaining tests in case one of them fail
-      desiredCapabilities: {
-        'goog:chromeOptions': {
-          'args': ["--use-fake-device-for-media-stream", "--use-fake-ui-for-media-stream"],
-          prefs: {
-            // disable geolocation  - only required for browserstack
-            // 0 - Default, 1 - Allow, 2 - Block
-            'profile.managed_default_content_settings.geolocation' : 1
-          }
-        }
-    },
+    //   desiredCapabilities: {
+    //     'goog:chromeOptions': {
+    //       'args': ["--use-fake-device-for-media-stream", "--use-fake-ui-for-media-stream"],
+    //       prefs: {
+    //         // disable geolocation  - only required for browserstack
+    //         // 0 - Default, 1 - Allow, 2 - Block
+    //         //'profile.managed_default_content_settings.geolocation' : 1
+    //       }
+    //     }
+    // },
   }
 }}
 

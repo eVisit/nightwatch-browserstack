@@ -9,7 +9,7 @@ nightwatch_config = {
 
   //global variables used in tests
   globals: {
-    env: "release",
+    env: "app",
     handle: "omega",
     email:"taylor+o14@evisit.com",
     password:"Patient123!",
@@ -36,32 +36,35 @@ nightwatch_config = {
   test_settings: {
     default: {},
 
-    chrome: {
+    chrome1: {
       desiredCapabilities: {
         browser: "chrome",
-        version: "89.0",
+        version: "latest",
         os: "Windows",
-        os_version: "10"
-        //resolution: '1024x768'
+        os_version: "10",
+        resolution: '1024x768'
         
       }
     },
-    firefox: {
+    firefox1: {
       desiredCapabilities: {
         browser: "firefox",
-        version: "87.0",
+        version: "latest",
         os: "OS X",
-        os_version: "Big Sur"
+        os_version: "Big Sur",
+        resolution: '1024x768'
       }
     },
-    safari: {
+    firefox2: {
       desiredCapabilities: {
-        browser: "safari"
+        browser: "firefox",
+        version: "latest"
       }
     },
-    ie: {
+    chrome2: {
       desiredCapabilities: {
-        browser: "internet explorer"
+        browser: "chrome",
+        version: "latest"
       }
     }
   }
