@@ -4,12 +4,7 @@
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "scripts": {
-    "test": "npm run suite",
-    "single": "./node_modules/.bin/nightwatch -c conf/single.conf.js",
-    "local": "node scripts/local.runner.js -c conf/local.conf.js",
-    "parallel": "./node_modules/.bin/nightwatch -c conf/parallel.conf.js -e chrome,firefox,safari,ie",
-    "parallel_local": "node scripts/local.runner.js -c conf/parallel_local.conf.js -e chrome,firefox,safari",
-    "suite": "./node_modules/.bin/nightwatch -c conf/suite.conf.js"
+    "canary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/patient/login-logout_test.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +13,7 @@
   "dependencies": {
     "browserstack-local": "^1.4.5",
     "chromedriver": "^89.0.0",
+    "nightwatch": "^1.6.4",
     "nightwatch-browserstack": "^1.3.0",
     "node-random-name": "^1.0.1",
     "request": "^2.88.2",
