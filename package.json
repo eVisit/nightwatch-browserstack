@@ -4,7 +4,8 @@
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "scripts": {
-    "canary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/patient/login-logout_test.js"
+    "patientCanary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/patient/login-logout_test.js",
+    "providerCanary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/provider/login-logout_test.js"
   },
   "repository": {
     "type": "git",
