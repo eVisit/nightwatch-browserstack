@@ -29,14 +29,14 @@ nightwatch_config = {
     'project' : 'Nightwatch',
     'browserstack.debug': true,
     'browserstack.timezone' : "Phoenix",
-    'browserstack.geoLocation' : "BR",
+    //'browserstack.geoLocation' : "BR",
     'os_version': 'Big Sur',
     'browser': 'Chrome',
-    'browser_version': '89.0',
+    'browser_version': 'latest',
     'resolution': '1920x1080',
     'os': 'OS X',
     'debug': true,
-    'networkLogs': true,
+    'browserstack.networkLogs': true,
   },
 
   test_settings: {
