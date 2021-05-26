@@ -8,9 +8,9 @@ nightwatch_config = {
     env: "app",
     handle: "omega",
     email:"taylor+o14@evisit.com",
-    password:"admin:mtaylor@evisit.com:mt4yl0r1320#!",
+    password:"IBM4youmm@",
     providerEmail: "taylor+provider@evisit.com",
-    providerPassword: "admin:mtaylor@evisit.com:mt4yl0r1320#!",
+    providerPassword: "IBM4youmm@",
   },
 
   selenium : {
