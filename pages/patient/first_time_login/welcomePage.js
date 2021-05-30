@@ -28,7 +28,7 @@ const commands = [{
     checkWelcomeText() {
         this.waitForElementVisible(`@welcomeImage`, 15000)
             // Save all text displayed in the panel as an array
-            this.verify.containsText(`@welcomeContainer`, 'You have successfully completed your account registration. You can now request to been seen virtually.')
+            this.verify.containsText(`@welcomeContainer`, 'You have successfully completed your account registration. You can now request to be seen virtually.')
         return this
     },
 
