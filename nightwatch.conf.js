@@ -15,6 +15,7 @@ module.exports =
       launch_url: 'https://nightwatchjs.org',
       desiredCapabilities: {
         browserName: 'chrome',
+        browserVersion: 'latest',
         // Disable geolocation - only required for browserstack
         "chromeOptions": {
           prefs: {
@@ -33,7 +34,7 @@ module.exports =
         }
       },
       globals: { // Variables that can be used by any test
-        env: "app",
+        env: "release",
         handle: "omega",
         email: "taylor+o14@evisit.com",
         password: "admin:mtaylor@evisit.com:mt4yl0r1320#!",
