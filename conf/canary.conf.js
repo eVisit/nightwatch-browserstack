@@ -21,12 +21,11 @@ nightwatch_config = {
   
     common_capabilities: {
       skip_testcases_on_fail: false,
-      'build': 'nightwatch-browserstack',
       'browserstack.user': process.env.BROWSERSTACK_USERNAME || 'nick34',
       'browserstack.key': process.env.BROWSERSTACK_ACCESS_KEY || 'SBukT13jtljJiBWoBpHw',
       "browserstack.autoWait": 20,
-      'build' : 'eVisit Test Suite',
-      'project' : 'Nightwatch',
+      'build' : 'eVisit Canary',
+      'project' : 'Login Canaries',
       'browserstack.debug': true,
       'browserstack.timezone' : "Phoenix",
       //'browserstack.geoLocation' : "BR",
