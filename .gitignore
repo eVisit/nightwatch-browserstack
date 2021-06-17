@@ -3,4 +3,4 @@ local.log
 .DS_Store
 chromedriver.log
 nightwatch.conf.js
-node_modules
+node_modules/
