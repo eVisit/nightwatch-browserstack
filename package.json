@@ -4,7 +4,7 @@
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "scripts": {
-    "patienLoginCanary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/patient/login-logout_test.js --suiteRetries 2",
+    "patienLoginCanary": "nightwatch -c ./conf/canary.conf.js  -t ./tests/canary/ --suiteRetries 2",
     "patientRegistrationCanary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/patient/registration_test.js --suiteRetries 2",
     "providerCanary": "nightwatch -c ./conf/suite.conf.js  -t ./tests/provider/login-logout_test.js --suiteRetries 2"
   },
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "browserstack-local": "^1.4.5",
-    "chromedriver": "^91.0.0",
+    "chromedriver": "^91.0.1",
     "nightwatch": "^1.6.4",
     "nightwatch-browserstack": "^1.3.0",
     "node-random-name": "^1.0.1",
