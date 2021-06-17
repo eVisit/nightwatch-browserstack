@@ -1,5 +1,5 @@
 nightwatch_config = {
-    src_folders : ["tests/canary"],
+    src_folders : ["tests/canary/"],
     
     custom_commands_path: ["./commands"],
     page_objects_path: ["pages"],
